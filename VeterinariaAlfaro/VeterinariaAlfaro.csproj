@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\VeterinariaAlfaro.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -50,15 +51,19 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="404.aspx" />
     <Content Include="App_Data\BDVeterinaria.mdf" />
     <Content Include="App_Data\BDVeterinaria_log.ldf">
       <DependentUpon>BDVeterinaria.mdf</DependentUpon>
     </Content>
+    <Content Include="EditDatos.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="media\css\Edit.css" />
     <Content Include="media\css\Index.css" />
     <Content Include="media\css\Login.css" />
     <Content Include="media\css\style.css" />
+    <Content Include="media\css\Validate.css" />
     <Content Include="media\img\logo.png" />
     <Content Include="media\img\banner.jpg" />
     <Content Include="media\js\jquery.js" />
@@ -68,6 +73,7 @@
     <Content Include="media\js\messages_es.js" />
     <Content Include="media\js\slider.js" />
     <Content Include="media\js\tools.js" />
+    <Content Include="Reservar.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -79,10 +85,24 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="404.aspx.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="404.aspx.designer.cs">
+      <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Controller\Conexion.cs" />
     <Compile Include="Controller\Mascota.cs" />
     <Compile Include="Controller\Reserva.cs" />
     <Compile Include="Controller\Usuario.cs" />
+    <Compile Include="EditDatos.aspx.cs">
+      <DependentUpon>EditDatos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditDatos.aspx.designer.cs">
+      <DependentUpon>EditDatos.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Helpers\HelpTool.cs" />
     <Compile Include="Index.aspx.cs">
       <DependentUpon>Index.aspx</DependentUpon>
@@ -100,6 +120,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Report\EReports.cs" />
+    <Compile Include="Reservar.aspx.cs">
+      <DependentUpon>Reservar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reservar.aspx.designer.cs">
+      <DependentUpon>Reservar.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\img-mascota\" />

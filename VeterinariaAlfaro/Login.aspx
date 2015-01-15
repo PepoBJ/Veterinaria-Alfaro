@@ -4,8 +4,10 @@
 <html lang="es">
 <head runat="server">
     <title>Login Users</title>
+    <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Login.css" rel="stylesheet" type="text/css" />
+    
     <meta charset="utf-8" />
     
     <script src="/media/js/jquery.js"></script>

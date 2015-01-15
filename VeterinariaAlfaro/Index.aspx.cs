@@ -54,7 +54,7 @@ namespace VeterinariaAlfaro
         {
             if (Session["userID"] != null && Session["userName"] != null && Session["type"] != null)
             {
-                lblNombre.Text = Session["userName"].ToString();
+                lkNombre.Text = Session["userName"].ToString();
                 LNombre.Attributes.Remove("class");
 
                 lnkLogin.Visible = false;
@@ -65,14 +65,13 @@ namespace VeterinariaAlfaro
 
                 if ("admin".Equals(Session["type"]))
                 {
-                    panel.Text = "Panel Control";
+                    panel.Text = "Mantenimiento";
                     panel.NavigateUrl = "~/panelControl.aspx";
                 }
                 else
                 {
-                    panel.Text = "Panel Control";
-                    panel.Text = "Configuración";
-                    panel.NavigateUrl = "~/UserPanel.aspx";
+                    panel.Text = "Mis Reservas";
+                    panel.NavigateUrl = "~/Reservar.aspx";
                 }
 
                 panel.Visible = true;
@@ -80,7 +79,7 @@ namespace VeterinariaAlfaro
             }
             else
             {
-                lblNombre.Text = "";
+                lkNombre.Text = "";
                 lnkLogin.Visible = true;
                 LLongin.Attributes.Remove("class");
 
@@ -101,7 +100,7 @@ namespace VeterinariaAlfaro
             lnkLogin.Visible = true;
             LLongin.Attributes.Remove("class");
 
-            lblNombre.Text = "";
+            lkNombre.Text = "";
 
             panel.Visible = false;
             LPanel.Attributes.Add("class", "ocultar");

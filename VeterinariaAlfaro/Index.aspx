@@ -76,7 +76,7 @@
 
         <nav id="menu">
             <ul>
-                <li runat="server" id="LNombre" class="ocultar"><asp:Label ID="lblNombre" runat="server" Text=""></asp:Label></li><!-- 
+                <li runat="server" id="LNombre" class="ocultar"><asp:HyperLink ID="lkNombre" runat="server" NavigateUrl="~/EditDatos.aspx"></asp:HyperLink></li><!-- 
                 --><li class="home"><a href="/Index.aspx">Inicio</a></li><!--   
                 --><li class="perros"><a href="/Index.aspx?filter=perro">Perros</a></li><!--   
                 --><li class="gatos"><a href="/Index.aspx?filter=gato">Gatos</a></li><!-- 

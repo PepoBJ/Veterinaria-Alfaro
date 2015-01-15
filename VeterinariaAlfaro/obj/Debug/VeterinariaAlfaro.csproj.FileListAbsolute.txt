@@ -29,3 +29,9 @@ E:\VeterinariaAlfaro\VeterinariaAlfaro\bin\VeterinariaAlfaro.pdb
 E:\VeterinariaAlfaro\VeterinariaAlfaro\obj\Debug\ResolveAssemblyReference.cache
 E:\VeterinariaAlfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.dll
 E:\VeterinariaAlfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.pdb
+F:\Veterinaria-Alfaro\VeterinariaAlfaro\bin\VeterinariaAlfaro.dll
+F:\Veterinaria-Alfaro\VeterinariaAlfaro\bin\VeterinariaAlfaro.pdb
+F:\Veterinaria-Alfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.csprojResolveAssemblyReference.cache
+F:\Veterinaria-Alfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.dll
+F:\Veterinaria-Alfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.pdb
+F:\Veterinaria-Alfaro\VeterinariaAlfaro\bin\VeterinariaAlfaro.XML
