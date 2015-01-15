@@ -4,6 +4,9 @@
 <html lang="es">
 <head id="Head1" runat="server">
     <title>Veterinaria Alfaro</title>
+    <link id="favicon1" runat="server" rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link id="favicon2" runat="server" rel="icon" href="/favicon.ico" type="image/ico" />
+
     <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Edit.css" rel="stylesheet" type="text/css" />
@@ -67,8 +70,8 @@
                     <asp:TextBox ID="txtTarjeta" runat="server" CssClass="required" minLength="16" maxLength="16" placeholder="# Tarjeta de Credito"></asp:TextBox>                    
                     <asp:TextBox ID="txtCodigo" runat="server" CssClass="required digits" minLength="3" maxLength="3" placeholder="Codigo de Seguridad"></asp:TextBox>                    
 
-                <asp:Button ID="btnRegister" runat="server" Text="Actualizar"  class="submit" 
-                    onclick="btnRegister_Click"></asp:Button>
+                <asp:Button ID="btnActualizar" runat="server" Text="Actualizar"  class="submit" 
+                    onclick="btnActualizar_Click"></asp:Button>
             </fieldset>
     </section>
 

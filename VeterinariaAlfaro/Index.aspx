@@ -4,6 +4,9 @@
 <html lang="es">
 <head runat="server">
     <title>Veterinaria Alfaro</title>
+    <link id="favicon1" runat="server" rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link id="favicon2" runat="server" rel="icon" href="/favicon.ico" type="image/ico" />
+
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Index.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />

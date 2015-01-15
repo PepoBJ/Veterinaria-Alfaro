@@ -13,5 +13,24 @@ namespace VeterinariaAlfaro
         {
 
         }
+        protected void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Session["userName"] = null;
+            Session["userID"] = null;
+            Session["type"] = null;
+
+            btnCerrar.Visible = false;
+            LbtnCerrar.Attributes.Add("class", "ocultar");
+
+            lnkLogin.Visible = true;
+            LLongin.Attributes.Remove("class");
+
+            lkNombre.Text = "";
+
+            panel.Visible = false;
+            LPanel.Attributes.Add("class", "ocultar");
+            Response.Redirect("~/Index.aspx");
+            return;
+        }
     }
 }

@@ -90,7 +90,7 @@ namespace VeterinariaAlfaro
             return;
         }
 
-        protected void btnRegister_Click(object sender, EventArgs e)
+        protected void btnActualizar_Click(object sender, EventArgs e)
         {
             Controller.Usuario user = new Controller.Usuario(Convert.ToInt16(Session["userID"]));
             if (!user.login(txtUsuario.Text, txtPassword.Text))

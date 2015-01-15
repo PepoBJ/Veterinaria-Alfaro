@@ -16,7 +16,7 @@ namespace VeterinariaAlfaro.Controller
 
         private Conexion conexion;
 
-        /*public Mascota(int _id = 0)
+        /*public Reserva(int _id = 0)
         {
             this.conection = new Conexion();
             if (_id != 0)

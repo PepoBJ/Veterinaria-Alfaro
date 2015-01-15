@@ -1,16 +1,71 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reservar.aspx.cs" Inherits="VeterinariaAlfaro.Reservar" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html />
+<html lang="es">
+<head id="Head1" runat="server">
+    <title>Tus Reservas</title>
+    <link id="favicon1" runat="server" rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link id="favicon2" runat="server" rel="icon" href="/favicon.ico" type="image/ico" />
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+    <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
+    
+    <meta charset="utf-8" />
+    <script type="text/javascript" src="/media/js/jquery.js"></script>
+    <script type="text/javascript" src="/media/js/menu.js"></script>
+    <script src="/media/js/jquery.validate.min.js"></script>
+    <script src="/media/js/messages_es.js"></script>
+    <script src="/media/js/jquery.validation.net.webforms.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+            $("#formIni").validateWebForm();
+        });
+         
+    </script>
 </head>
 <body>
-    <form id="form1" runat="server">
-    <div>
+    <form id="formIni" runat="server">
     
+    <header id="cabezera">
+
+        <div id="logo">
+            <img src="/media/img/dog.png" class="sello" alt="dog Text" />                
+            <img src="/media/img/logo.png" id="home" class="logo_img" onclick="" alt="Logo Text" />                
+            <img src="/media/img/cat.png" class="sello" alt="cat Text" />  
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li runat="server" id="LNombre" class="ocultar"><asp:HyperLink ID="lkNombre" runat="server" NavigateUrl="~/EditDatos.aspx"></asp:HyperLink></li><!-- 
+                --><li class="home"><a href="/Index.aspx">Inicio</a></li><!--   
+                --><li class="perros"><a href="/Index.aspx?filter=perro">Perros</a></li><!--   
+                --><li class="gatos"><a href="/Index.aspx?filter=gato">Gatos</a></li><!-- 
+                --><li class="aves"><a href="/Index.aspx?filter=ave">Aves</a></li><!-- 
+                --><li class="otros"><a href="/Index.aspx?filter=peque">Pequeños</a></li><!--   
+                --><li runat="server" id="LLongin"><asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li><!--                
+                --><li runat="server" id="LPanel" class="ocultar"><asp:HyperLink ID="panel" runat="server" NavigateUrl="~/panelControl.aspx">[panel]</asp:HyperLink></li><!-- 
+                --><li runat="server" id="LbtnCerrar" class="ocultar"><asp:Button ID="btnCerrar" runat="server" Text="Salir" Visible="False" onclick="btnCerrar_Click"></asp:Button></li>
+            </ul>
+        </nav>
+    </header>   
+    
+    <div id="content_aux">
+    
+    
+    <section id="contenido" runat="server">        
+                      
+            <div class="notificacion">
+                <p id="msg" runat="server">Notificaciones</p>
+            </div>                   
+            
+    </section>
+
     </div>
+
+    <footer id="reference">    
+        <span>Veterinaria Alfaro © 2014 - 2015</span>
+    </footer>
+
     </form>
-</body>
 </html>
