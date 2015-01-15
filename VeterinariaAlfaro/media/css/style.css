@@ -1,0 +1,297 @@
+﻿/*
+webkit-transition: .6s cubic-bezier(0,1.5,.5,1);
+-moz-transition: .6s cubic-bezier(0,1.5,.5,1);
+-o-transition: .6s cubic-bezier(0,1.5,.5,1);
+transition: .6s cubic-bezier(0,1.5,.5,1);
+
+webkit-transform: rotate(360deg) scale(2);
+-moz-transform: rotate(360deg) scale(2);
+-o-transform: rotate(360deg) scale(2);
+-ms-transform: rotate(360deg) scale(2);
+transform: rotate(360deg) scale(2);
+*/
+
+* {
+    padding: 0;
+    margin: 0;    
+    font-family: 'open sans'  !important;
+}
+
+body {
+	font-size: 16px;
+	font-family: 'Lato',sans-serif;
+	width: 100%;
+	
+	color: #000;
+	background: #f9fcf7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f9fcf7 0%, #f5f9f0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9fcf7), color-stop(100%,#f5f9f0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f9fcf7 0%,#f5f9f0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f9fcf7 0%,#f5f9f0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f9fcf7 0%,#f5f9f0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f9fcf7 0%,#f5f9f0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9fcf7', endColorstr='#f5f9f0',GradientType=0 ); /* IE6-9 */
+
+}
+
+#formIni 
+{
+    width: 98%;
+    display:block;
+    margin: 0 auto;
+}
+
+img 
+{
+    max-width: 100%;
+}
+a {
+	text-decoration: none;
+}
+input:focus 
+{
+    outline:0px;
+}
+
+#cabezera {
+	background: rgba(255,255,255,.95);
+	position: fixed;
+	z-index: 100;
+	width: 100%;
+	margin:0 auto;
+	margin-top:0;
+	left:0;
+	right:0;
+	top: 0;
+	-moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+}
+#logo, #menu
+{
+	display: block;
+}
+
+#logo 
+{
+    text-align:center;
+	width: 100%;	
+	padding-left: 1%;
+	padding: 5px;
+	box-sizing: border-box;
+}
+#logo img 
+{
+    display: inline-block;
+	vertical-align: middle;
+	color: #000;
+	font-weight: bold;
+}
+#logo .logo_img 
+{
+    cursor:pointer;
+    width: 55% !important;
+    transition: all 0.5s ease;
+	webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+#logo .logo_img:hover 
+{
+    -ms-transform: scale(1.2,1.2);
+    -webkit-transform: rotate(360deg) scale(1.2,1.2);
+    transform: scale(1.1,1.1) translateY(10px);
+}
+#logo .sello 
+{
+    border:2px solid #aaa;
+    margin-top:2px;
+    margin-bottom:2px;
+    width: 10% !important;
+    height: 112px !important;
+    border-radius: 50%;
+    position:relative;
+    -moz-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.5s ease;
+	webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+}
+#logo .sello:hover 
+{
+    -ms-transform: rotate(360deg) ;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg) ;
+}
+#logo .sello:last-child 
+{
+    position:relative;
+    right:-90;
+}
+#logo .sello:first-child 
+{
+    left:-90;
+}
+
+
+#menu {
+	width: 100%;
+	margin: 0 auto;
+	font-size: 1em;
+	text-align: center;
+	box-sizing: border-box;
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+
+#menu li 
+{
+    margin:0;
+	color: #000;
+	list-style: none;
+	display: inline-block;
+	vertical-align: middle;
+	border: 1px solid transparent;	
+	padding-right: 5px;	
+	cursor: pointer;
+	transition: all 0.5s ease;
+	webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	text-align:left;
+	box-sizing:border-box;
+	overflow:hidden;
+	padding-left: 20px;
+	background-size: 16px 16px;
+	border-left: 1px solid #aaa;
+}
+
+.perros 
+{
+    background:url('/media/img/perro.png') no-repeat left center;    
+    background-position: +4px;
+}
+.gatos 
+{
+    background:url('/media/img/gato.png') no-repeat left center;    
+    background-position: +4px;
+}
+.aves 
+{
+    background:url('/media/img/bird.png') no-repeat left center;    
+    background-position: +4px;
+}
+.otros 
+{
+    background:url('/media/img/other.png') no-repeat left center;    
+    background-position: +4px;
+}
+#LLongin 
+{
+    background:url('/media/img/login.png') no-repeat left center;    
+    background-position: +4px;
+}
+#LPanel 
+{
+    background:url('/media/img/config.png') no-repeat left center;    
+    background-position: +4px;
+}
+#LbtnCerrar 
+{
+    background:url('/media/img/logout.png') no-repeat left center;    
+    background-position: +4px;
+}
+#LNombre 
+{
+    background:url('/media/img/user.png') no-repeat left center;    
+    background-position: +4px;
+}
+.home 
+{
+    background:url('/media/img/home.png') no-repeat left center;    
+    background-position: +4px;
+}
+
+#menu span 
+{
+    display:inline-block;
+    font-weight: bold;
+    text-transform:uppercase;
+    padding-bottom:7px;
+    padding-top:7px;
+    padding-left:5px;
+}
+#menu input 
+{
+    vertical-align:top;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:#000;     
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid transparent;
+	padding-bottom:7px;
+    padding-top:7px;
+    padding-left:5px;
+	background: transparent;
+	text-align: center;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box  
+}
+#menu input:active , #menu input:focus
+{
+    border: 1px solid transparent;
+    outline:0px;
+}
+
+
+#menu li a 
+{
+    font-weight:bold;
+    display:block;
+    width:100%;
+    padding-bottom:7px;
+    padding-top:7px;
+    padding-left:5px;
+    text-transform: uppercase;
+	color: #000;
+	height: 100%;		
+}
+#menu li:hover 
+{
+    background-color: rgba(0,0,0,.1);
+}
+
+/*
+#menu li:first-child 
+{
+    position:relative;
+    left:-58;
+}
+#menu li:last-child 
+{
+   position:relative;
+    left:+48;
+}
+*/
+
+#reference {
+	clear: both;
+	color: #000;
+	font-weight: bold;
+	text-align: center;
+	padding: 14px;
+	padding-top: 25px;
+}
+
+
+/************/
+
+.ocultar 
+{
+    display: none !important;
+}
