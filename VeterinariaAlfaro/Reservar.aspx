@@ -10,6 +10,8 @@
     <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Recerva.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="/media/notify/themes/alertify.core.css" />
+	<link rel="stylesheet" href="/media/notify/themes/alertify.default.css" id="toggleCSS" />
     
     <meta charset="utf-8" />
     <script type="text/javascript" src="/media/js/jquery.js"></script>
@@ -17,10 +19,29 @@
     <script src="/media/js/jquery.validate.min.js"></script>
     <script src="/media/js/messages_es.js"></script>
     <script src="/media/js/jquery.validation.net.webforms.min.js"></script>
+    <script src="/media/notify/lib/alertify.min.js"></script>
     <script type="text/javascript">
         $(function () {
 
             $("#formIni").validateWebForm();
+            $('.lcancel').on('click', function () {
+
+                var x = $(this);
+
+                alertify.set({ labels: {
+                    ok: "Si",
+                    cancel: "No"
+                }
+                });
+                alertify.confirm("¿Seguro que quieres cancelar tu reserva?<br/>", function (e) {
+                    if (e) {
+                        location.href = x.data('url');
+                    } else {
+                        alertify.error("Tu reserva no fue cancelada");
+                    }
+                });
+                return false;
+            });
         });
          
     </script>

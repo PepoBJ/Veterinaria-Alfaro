@@ -31,6 +31,15 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
+        <member name="F:VeterinariaAlfaro.Reservar.toggleCSS">
+            <summary>
+            Control toggleCSS.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
         <member name="F:VeterinariaAlfaro.Reservar.formIni">
             <summary>
             Control formIni.
@@ -457,15 +466,6 @@
         <member name="F:VeterinariaAlfaro.EditDatos.btnActualizar">
             <summary>
             Control btnActualizar.
-            </summary>
-            <remarks>
-            Campo generado automáticamente.
-            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-            </remarks>
-        </member>
-        <member name="F:VeterinariaAlfaro._404.form1">
-            <summary>
-            control form1.
             </summary>
             <remarks>
             Campo generado automáticamente.

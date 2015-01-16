@@ -40,6 +40,15 @@ namespace VeterinariaAlfaro {
         protected global::System.Web.UI.HtmlControls.HtmlLink favicon2;
         
         /// <summary>
+        /// Control toggleCSS.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlLink toggleCSS;
+        
+        /// <summary>
         /// Control formIni.
         /// </summary>
         /// <remarks>

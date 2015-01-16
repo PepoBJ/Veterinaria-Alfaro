@@ -51,7 +51,7 @@ namespace VeterinariaAlfaro
                 lbl.Text = "No tienes ninguna reserva";
 
                 if (busqueda)
-                    lbl.Text = "No se encontraron reservar, Intenta otra vez.";
+                    lbl.Text = "No se encontraron reservas, Intenta otra vez.";
 
                 lbl.ID = "redireccion";
                 content_reservas.Controls.Add(lbl);

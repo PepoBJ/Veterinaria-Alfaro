@@ -365,9 +365,8 @@ namespace VeterinariaAlfaro.Report
                 HyperLink lcancel = new HyperLink();
                 lcancel.CssClass = "lcancel";
                 lcancel.Text = "Cancelar Reserva";
-                lcancel.ID = "btnEliminar";
-                lcancel.NavigateUrl = "~/AccionReservar.aspx?accion=cancel&url=" + reser.Id;
-                
+                lcancel.NavigateUrl = "#"; //"javascript:;";
+                lcancel.Attributes.Add("data-url", "/AccionReservar.aspx?accion=cancel&url=" + reser.Id ) ;                
                 links.Controls.Add(lcancel);
                                
 
