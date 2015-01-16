@@ -18,7 +18,7 @@ namespace VeterinariaAlfaro.Report
             Panel aux = new Panel();
 
             order = order == "" ? ("ORDER BY precio") : order;
-
+            order = " AND stock > 0 " + order;
             dtPA = new Controller.Mascota().listaMascota(patron,order);
 
             if (dtPA.Rows.Count < 1)
@@ -241,6 +241,165 @@ namespace VeterinariaAlfaro.Report
             aux.Controls.Add(titulo);
             aux.Controls.Add(cuerpo);            
             aux.Controls.Add(reserva);
+
+            return aux;
+        }
+
+        public static Panel listaReservas(string patron = "")
+        {
+            Panel aux = new Panel();
+
+            Controller.Usuario user = new Controller.Usuario(Convert.ToInt16(System.Web.HttpContext.Current.Session["userID"]));
+
+            DataTable _data = new Controller.Reserva().listaReservaUser(user.Id, patron);
+
+            for (int i = 0; i < _data.Rows.Count; i++)
+            {
+                Controller.Reserva reser = new Controller.Reserva(Convert.ToInt16(_data.Rows[i].ItemArray[0]));
+
+                HtmlGenericControl reserva = new HtmlGenericControl("article");
+                reserva.Attributes.Add("class", "reserva");
+
+                HtmlGenericControl name = new HtmlGenericControl("div");
+                name.Attributes.Add("class", "nombre");
+                Label leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Cliente";
+                name.Controls.Add(leyend);
+                Label text = new Label();
+                text.CssClass = "cont";
+                text.Text = user.Nombre + " " + user.Apellido.Split(' ')[0];
+                name.Controls.Add(text);
+
+                HtmlGenericControl freserva = new HtmlGenericControl("div");
+                freserva.Attributes.Add("class", "freserva");
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Fecha Reserva";
+                freserva.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                text.Text = reser.Fecha_reserva;
+                freserva.Controls.Add(text);
+
+                HtmlGenericControl fentrega = new HtmlGenericControl("div");
+                fentrega.Attributes.Add("class", "fentrega");
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Fecha Entrega";
+                fentrega.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                if (reser.Estado.ToLower() == "entregado")
+                    text.Text = reser.Fecha_entrega;
+                else
+                    text.Text = "No Entregado";
+                fentrega.Controls.Add(text);
+
+                HtmlGenericControl mascota = new HtmlGenericControl("div");
+                mascota.Attributes.Add("class", "mascota");
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Mascota";
+                mascota.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                text.Text = reser.Mascota.Type + " - " + reser.Mascota.Raza;
+                mascota.Controls.Add(text);
+
+                HtmlGenericControl cantidad = new HtmlGenericControl("div");
+                cantidad.Attributes.Add("class", "cantidad");
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Cantidad";
+                cantidad.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                text.Text = reser.Cantidad.ToString();
+                cantidad.Controls.Add(text);
+
+                HtmlGenericControl punitario = new HtmlGenericControl("div");
+                punitario.Attributes.Add("class", "punitario");
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Sub Total";
+                punitario.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                text.Text = reser.Mascota.Precio.ToString();
+                punitario.Controls.Add(text);
+
+                HtmlGenericControl ptotal = new HtmlGenericControl("div");
+                ptotal.Attributes.Add("class", "ptotal");
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Total";
+                ptotal.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                text.Text = reser.Total.ToString();
+                ptotal.Controls.Add(text);
+
+                HtmlGenericControl estado = new HtmlGenericControl("div");
+                estado.Attributes.Add("class", "estado " + reser.Estado);
+                leyend = new Label();
+                leyend.CssClass = "leyend";
+                leyend.Text = "Estado";
+                estado.Controls.Add(leyend);
+                text = new Label();
+                text.CssClass = "cont";
+                text.Text = reser.Estado;
+                estado.Controls.Add(text);
+
+                HtmlGenericControl links = new HtmlGenericControl("div");
+                links.Attributes.Add("class", "links");
+                HyperLink ledit = new HyperLink();
+                ledit.CssClass = "ledit";
+                ledit.Text = "Editar";
+                ledit.ID = "btnEditar";
+                ledit.NavigateUrl = "~/AccionReservar.aspx?accion=edit&url=" + reser.Id;
+
+                HyperLink lcancel = new HyperLink();
+                lcancel.CssClass = "lcancel";
+                lcancel.Text = "Cancelar";
+                lcancel.ID = "btnEliminar";
+                lcancel.NavigateUrl = "~/AccionReservar.aspx?accion=cancel&url=" + reser.Id;
+                links.Controls.Add(ledit);
+                links.Controls.Add(lcancel);
+                               
+
+                reserva.Controls.Add(name);
+                reserva.Controls.Add(freserva);
+                reserva.Controls.Add(fentrega);
+                reserva.Controls.Add(mascota);
+                reserva.Controls.Add(cantidad);
+                reserva.Controls.Add(punitario);
+                reserva.Controls.Add(ptotal);
+                reserva.Controls.Add(estado);
+                if (reser.Estado.ToLower() != "cancelado")
+                    reserva.Controls.Add(links);
+
+                /*
+                HtmlGenericControl freserva = new HtmlGenericControl("div");
+                freserva.Attributes.Add("class", "freserva");
+                HtmlGenericControl fecha = new HtmlGenericControl("input");
+                fecha.Attributes.Add("class", "fecha");
+                fecha.Attributes.Add("type", "date");
+                fecha.Attributes.Add("value", reser.Fecha_reserva);
+                freserva.Controls.Add(fecha);
+
+                HtmlGenericControl fentrega = new HtmlGenericControl("div");
+                fentrega.Attributes.Add("class", "fentrega");
+                fecha = new HtmlGenericControl("input");
+                fecha.Attributes.Add("class", "fecha");
+                fecha.Attributes.Add("type", "date");
+                fecha.Attributes.Add("value", reser.Fecha_entrega);
+                fentrega.Controls.Add(fecha);
+                */
+
+                aux.Controls.Add(reserva);
+
+            }
 
             return aux;
         }

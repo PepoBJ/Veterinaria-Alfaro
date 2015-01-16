@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="404.aspx" />
+    <Content Include="AccionReservar.aspx" />
     <Content Include="App_Data\BDVeterinaria.mdf" />
     <Content Include="App_Data\BDVeterinaria_log.ldf">
       <DependentUpon>BDVeterinaria.mdf</DependentUpon>
@@ -62,6 +63,7 @@
     <Content Include="media\css\Edit.css" />
     <Content Include="media\css\Index.css" />
     <Content Include="media\css\Login.css" />
+    <Content Include="media\css\Recerva.css" />
     <Content Include="media\css\style.css" />
     <Content Include="media\css\Validate.css" />
     <Content Include="media\img\logo.png" />
@@ -91,6 +93,13 @@
     </Compile>
     <Compile Include="404.aspx.designer.cs">
       <DependentUpon>404.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccionReservar.aspx.cs">
+      <DependentUpon>AccionReservar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccionReservar.aspx.designer.cs">
+      <DependentUpon>AccionReservar.aspx</DependentUpon>
     </Compile>
     <Compile Include="Controller\Conexion.cs" />
     <Compile Include="Controller\Mascota.cs" />

@@ -89,6 +89,7 @@ fieldset input:last-child,
 #btnEditar,
 #btnAgregar,
 #btnEliminar , 
+#btnBuscar,
 .linkPanel{
 	display: block;
 	width: auto;
@@ -138,12 +139,13 @@ fieldset input:last-child:hover,
 #btnEditar:hover, 
 #btnAgregar:hover,
 #btnEliminar:hover , 
+#btnBuscar:hover,
 .linkPanel:hover
 {
     border: 2px solid #000;
 }
 
-#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar { 
+#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar, #btnBuscar { 
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 0;
@@ -224,7 +226,7 @@ select {
 	.notificacion {
 		width: 50% !important;
 	}
-	#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar { 
+	#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar, #btnBuscar { 
 		margin-top: 10px !important;
 	}
 	.linkPanel {

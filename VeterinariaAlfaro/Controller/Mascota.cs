@@ -65,7 +65,17 @@ namespace VeterinariaAlfaro.Controller
         {
             return (conection.getNonQuery("DELETE FROM tmascota WHERE id = " + this.Id));
         }
-
+        public bool aumentar_stock(int _cant)
+        {
+            this.stock = _cant;
+            if (conection.getNonQuery("UPDATE tmascota SET " +
+                        "stock = stock + " + this.Stock + 
+                    "WHERE id = " + this.Id))
+                buscarMascotaId(this.Id);
+            else
+                return false;
+            return true;
+        }
         public bool editMascota()
         {
             if (conection.getNonQuery("UPDATE tmascota SET raza = '" + this.Raza + "' , " +

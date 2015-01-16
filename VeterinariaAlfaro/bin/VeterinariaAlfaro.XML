@@ -130,6 +130,33 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
+        <member name="F:VeterinariaAlfaro.Reservar.txtBusqueda">
+            <summary>
+            Control txtBusqueda.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Reservar.btnBuscar">
+            <summary>
+            Control btnBuscar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Reservar.content_reservas">
+            <summary>
+            Control content_reservas.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
         <member name="F:VeterinariaAlfaro.Index.favicon1">
             <summary>
             Control favicon1.

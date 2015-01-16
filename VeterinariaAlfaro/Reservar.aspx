@@ -9,6 +9,7 @@
 
     <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/Recerva.css" rel="stylesheet" type="text/css" />
     
     <meta charset="utf-8" />
     <script type="text/javascript" src="/media/js/jquery.js"></script>
@@ -57,7 +58,17 @@
                       
             <div class="notificacion">
                 <p id="msg" runat="server">Notificaciones</p>
-            </div>                   
+            </div>       
+            
+            <div id="buscador">                
+                <asp:TextBox ID="txtBusqueda" runat="server"></asp:TextBox>
+                <asp:Button ID="btnBuscar" runat="server" Text="Buscar" 
+                    onclick="btnBuscar_Click"></asp:Button>
+            </div>
+
+            <div id="content_reservas" runat="server">
+                
+            </div>            
             
     </section>
 

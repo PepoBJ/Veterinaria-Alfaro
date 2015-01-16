@@ -1,0 +1,126 @@
+﻿
+#redireccion, #content_reservas .reserva , #buscador {
+	display: inline-block !important;
+	padding: 15px;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+    box-sizing: border-box   ;
+    display: inline-block;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+    margin: .5%;
+    margin-top: 20px;
+    border: 2px solid #aaa;
+    background: rgba(255,255,255,95);
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) ;
+	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) ;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8) ;
+	-moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;    
+}
+#redireccion:hover, #content_reservas .reserva:hover, #buscador:hover {
+	border: 2px solid rgba(0, 0, 0, 0.8);
+}
+
+#redireccion 
+{
+    display:block;
+    width: 100%;
+}
+
+#content_reservas .reserva   
+{
+    display:block !important;
+}
+
+#content_reservas .reserva div 
+{
+    display: inline-block;
+    margin:5px;    
+}
+#content_reservas .reserva .nombre, #content_reservas .reserva .freserva, #content_reservas .reserva .fentrega,
+#content_reservas .reserva .mascota, #content_reservas .reserva .cantidad, #content_reservas .reserva .estado
+, #content_reservas .reserva .punitario, #content_reservas .reserva .ptotal
+{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) ;
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) ;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.4) ;
+	-moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease; 
+    border-radius:5px;
+}
+#content_reservas .reserva div span
+{
+    display:block;
+}
+#content_reservas .reserva .links 
+{
+    display:block;
+}
+
+#content_reservas .reserva div .leyend, #content_reservas .reserva div .cont
+{
+    padding:5px;
+    cursor:default;
+}
+#content_reservas .reserva div .leyend 
+{
+    background: rgba(0,0,0,.8);
+    border-radius:5px 5px 0 0  ;
+    color:#FFF;
+}
+#content_reservas .reserva div .cont 
+{
+    font-weight:normal;
+}
+#content_reservas .reserva .estado span:last-child 
+{
+    border-radius: 0 0 5px 5px;
+}
+#content_reservas .reserva .entregado span:last-child 
+{
+    background:rgba(70, 234, 70, 0.40);
+}
+#content_reservas .reserva .pendiente span:last-child 
+{
+    background:rgba(255, 167, 31, 0.45);
+}
+#content_reservas .reserva .cancelado span:last-child 
+{
+    background:rgba(255, 4, 13, 0.45);
+}
+
+#buscador
+{
+    width: 98%;
+}
+
+#buscador #txtBusqueda
+{
+    border: 2px solid #eee;
+	padding: 5px;
+	color: #000;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -moz-linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -webkit-linear-gradient(left, #FFFFFF, #F7F9FA);
+	background: -o-linear-gradient(left, #FFFFFF, #F7F9FA);
+	-moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    margin: 1.5%;
+    font-size: 1em !important;
+}
+#buscador #txtBusqueda:focus
+{
+	color: #000;
+	border-color: rgba(0, 0, 0, 1);
+}
