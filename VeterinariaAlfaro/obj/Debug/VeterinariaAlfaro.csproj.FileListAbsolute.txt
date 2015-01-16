@@ -34,4 +34,3 @@ F:\Veterinaria-Alfaro\VeterinariaAlfaro\bin\VeterinariaAlfaro.pdb
 F:\Veterinaria-Alfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.csprojResolveAssemblyReference.cache
 F:\Veterinaria-Alfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.dll
 F:\Veterinaria-Alfaro\VeterinariaAlfaro\obj\Debug\VeterinariaAlfaro.pdb
-F:\Veterinaria-Alfaro\VeterinariaAlfaro\bin\VeterinariaAlfaro.XML

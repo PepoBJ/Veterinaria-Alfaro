@@ -30,7 +30,7 @@ namespace VeterinariaAlfaro
             reserva.Estado = "pendiente";
 
             Label lbl = new Label();
-            lbl.Text = "Seras redirigido, en 5 segundos";
+            lbl.Text = "Estamos procesando tu pedido...";
             lbl.ID = "redireccion";
             content_reservas.Controls.Add(lbl);
 
@@ -38,19 +38,21 @@ namespace VeterinariaAlfaro
                 msg.InnerText = "Tu reserva fue realizada con exito";                
             else
                 msg.InnerText = "Tu reserva no pudo ser hecha, se envio el error.";
-            Response.AddHeader("REFRESH", "5;URL=Index.aspx");
+            Response.AddHeader("REFRESH", "2;URL=Reservar.aspx");
         }
 
-        private void cargarContenido(string patron = "")
+        private void cargarContenido(string patron = "", bool busqueda = false)
         { 
             content_reservas.Controls.Clear();
             Panel pnl = Report.EReports.listaReservas(patron);
             if (pnl.Controls.Count < 1)
             {
-                txtBusqueda.Visible = false;
-                btnBuscar.Visible = false;
                 Label lbl = new Label();
                 lbl.Text = "No tienes ninguna reserva";
+
+                if (busqueda)
+                    lbl.Text = "No se encontraron reservar, Intenta otra vez.";
+
                 lbl.ID = "redireccion";
                 content_reservas.Controls.Add(lbl);
             }
@@ -118,8 +120,11 @@ namespace VeterinariaAlfaro
         protected void btnBuscar_Click(object sender, EventArgs e)
         {
             string quet = txtBusqueda.Text;
-            string patron = " AND ( estado like '%" + quet + "%' OR fecha_reserva like '%" + quet + "%' OR fecha_entrega like '%" + quet + "%' OR estado like '%" + quet + "%' )";
-            cargarContenido(patron);
+            string patron = " AND ( estado like '%" + quet + "%' OR fecha_reserva like '%" + quet +
+                "%' OR fecha_entrega like '%" + quet + "%' OR estado like '%" + quet +
+                "%' OR tu.apellido like '%" + quet + "%' OR tu.nombre like '%" + quet +
+                "%' OR tm.raza like '%" + quet + "%' OR tm.type like '%" + quet + "%' )";
+            cargarContenido(patron, true);
         }
     }
 }

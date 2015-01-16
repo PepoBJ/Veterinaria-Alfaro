@@ -102,7 +102,9 @@ namespace VeterinariaAlfaro.Controller
 
         public DataTable listaReservaUser(int _id_user, string patron = "")
         {
-            string query = "SELECT id FROM treserva WHERE id_usuario = " + _id_user + " " + patron + " ORDER BY estado DESC";
+            string query = "SELECT tr.id FROM treserva tr INNER JOIN tmascota tm ON tr.id_mascota = tm.id " +
+                " JOIN tusuario tu ON tr.id_usuario = tu.id " +
+                " WHERE id_usuario = " + _id_user + " " + patron + " ORDER BY estado DESC";
             return this.conection.getQuery(query);
         } 
         

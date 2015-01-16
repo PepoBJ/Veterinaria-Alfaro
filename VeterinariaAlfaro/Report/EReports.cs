@@ -351,20 +351,23 @@ namespace VeterinariaAlfaro.Report
                 text.Text = reser.Estado;
                 estado.Controls.Add(text);
 
+
                 HtmlGenericControl links = new HtmlGenericControl("div");
                 links.Attributes.Add("class", "links");
+                /*
                 HyperLink ledit = new HyperLink();
                 ledit.CssClass = "ledit";
                 ledit.Text = "Editar";
                 ledit.ID = "btnEditar";
                 ledit.NavigateUrl = "~/AccionReservar.aspx?accion=edit&url=" + reser.Id;
+                */
 
                 HyperLink lcancel = new HyperLink();
                 lcancel.CssClass = "lcancel";
-                lcancel.Text = "Cancelar";
+                lcancel.Text = "Cancelar Reserva";
                 lcancel.ID = "btnEliminar";
                 lcancel.NavigateUrl = "~/AccionReservar.aspx?accion=cancel&url=" + reser.Id;
-                links.Controls.Add(ledit);
+                
                 links.Controls.Add(lcancel);
                                
 
@@ -376,7 +379,7 @@ namespace VeterinariaAlfaro.Report
                 reserva.Controls.Add(punitario);
                 reserva.Controls.Add(ptotal);
                 reserva.Controls.Add(estado);
-                if (reser.Estado.ToLower() != "cancelado")
+                if (reser.Estado.ToLower() == "pendiente")
                     reserva.Controls.Add(links);
 
                 /*
