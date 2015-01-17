@@ -1,17 +1,18 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Index.aspx.cs" Inherits="VeterinariaAlfaro.Index" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="panelControl.aspx.cs" Inherits="VeterinariaAlfaro.panelControl" %>
+
 
 <!DOCTYPE html />
 <html lang="es">
-<head runat="server">
-    <title>Veterinaria Alfaro</title>
+<head id="Head1" runat="server">
+    <title>Panel De Mantenimiento</title>
     <link id="favicon1" runat="server" rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link id="favicon2" runat="server" rel="icon" href="/favicon.ico" type="image/ico" />
 
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
-    <link href="/media/css/Index.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/Mantenimiento.css" rel="stylesheet" type="text/css" />
     <meta charset="utf-8" />
     <script type="text/javascript" src="/media/js/jquery.js"></script>
-    <script type="text/javascript" src="/media/js/slider.js"></script>
     <script type="text/javascript" src="/media/js/menu.js"></script>
     
 </head>
@@ -41,43 +42,23 @@
         </nav>
     </header>   
     
-    <div id="banner">
-        <div class="s_element s_visible" ><img src="/media/banner/banner1.jpg" /></div>
-        <div class="s_element" >
-            <img src="/media/banner/banner2.png" />
-            <span>No existe mejor psiquiatra en el mundo que un cachorro lamiendo tu cara.</span>
-        </div>
-        <div class="s_element" >
-            <img src="/media/banner/banner3.jpg" />
-            <span>Quién podría creer que no hay un alma tras esos ojos iluminados!.</span>
-        </div>
-        <div class="s_element" >
-            <img src="/media/banner/banner4.jpg" />
-            <span>La elegancia quiso cuerpo y vida, por eso se transformó en gato.</span>
-        </div>
-        <div class="s_element" >
-            <img src="/media/banner/banner5.jpg" />
-            <span>Cada niño debería tener dos cosas: un perro, y una madre que le deje tener uno.</span>
-        </div>
-        <div class="s_element" >
-            <img src="/media/banner/banner6.png" />
-            <span>Los animales son buenos amigos, no hacen preguntas y tampoco critican.</span>
-        </div>
-        <span class="ant"></span>
-        <span class="sgt"></span>
-    </div>
 
     <div id="content_aux">
-    
-    <aside id="merchandising">
-        <li class="mision"><a href="/Index.aspx?view=mision">Misión</a></li>
-        <li class="vision"><a href="/Index.aspx?view=vision">Visión</a></li>
-        <li class="nosotros"><a href="/Index.aspx?view=nosotros">Nosotros</a></li>
-        <li class="ubicanos"><a href="/Index.aspx?view=ubicanos">Ubicanos</a></li>
-    </aside>
-    
-    <section id="contenido" runat="server">        
         
+    <section id="contenido" runat="server">    
+        <fieldset>
+        <header>
+            <h3>Panel de Mantenimiento</h3>
+        </header>    
+        <section>
+            <ul class="mantenimiento">
+                <li runat="server"><asp:HyperLink ID="musuario" runat="server" NavigateUrl="~/Mantenimiento/Usuarios.aspx">Mantenimiento Usuarios</asp:HyperLink></li><!-- 
+                --><li runat="server"><asp:HyperLink ID="mmascota" runat="server" NavigateUrl="~/Mantenimiento/Mascotas.aspx">Mantenimiento Mascotas</asp:HyperLink></li><!-- 
+                --><li runat="server"><asp:HyperLink ID="mreserva" runat="server" NavigateUrl="~/Mantenimiento/Reservas.aspx">Mantenimiento Reservas</asp:HyperLink></li>
+            </ul>
+        </section>
+        </fieldset>
+
     </section>
 
     </div>

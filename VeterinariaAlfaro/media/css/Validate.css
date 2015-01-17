@@ -90,6 +90,7 @@ fieldset input:last-child,
 #btnAgregar,
 #btnEliminar , 
 #btnBuscar,
+#btnHabilitar,
 .linkPanel, .lcancel{
 	display: block;
 	width: auto;
@@ -137,6 +138,7 @@ fieldset#registro section input:last-child:hover,
 fieldset#login section input:last-child:hover, 
 fieldset input:last-child:hover, 
 #btnEditar:hover, 
+#btnHabilitar:hover,
 #btnAgregar:hover,
 #btnEliminar:hover , 
 #btnBuscar:hover,
@@ -182,7 +184,7 @@ select {
 	margin-bottom: 10px;
 	margin-top: 10px;
 	padding-right: 8px !important;
-	 color: #9E15BA;
+	 color: #222;
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     border-radius: 4px;
@@ -194,10 +196,7 @@ select {
     -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
     font-weight: bold;
-    background: #FFF url('/media/arrow.png') no-repeat right center !important;
-	 -moz-appearance: none;
-	 -webkit-appearance: none;
-	 appearance: none;
+    background: #FFF ;
 }
 
 

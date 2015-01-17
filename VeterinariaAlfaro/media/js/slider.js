@@ -91,4 +91,55 @@
         }
     }
 
+
+    /*  EFECTOS DE CARGA    */
+    $('img.foto').click(function () { location.href = $(this).attr('alt') });
+    var x = $('.item');
+    x.find('header').hide(0);
+    x.find('aside').hide(0);
+    x.find('section').hide(0);
+    x.find('footer').hide(0);
+
+    $.each(x, function (index, value) {
+        $(value).find('header').delay(200).show(500, function () {
+            $(value).find('aside').delay(200).show(500, function () {
+                $(value).find('section').delay(200).show(500, function () {
+                    $(value).find('footer').delay(200).show(500, function () {
+
+                        $(value).find('header').css({
+                            WebkitTransition: 'all 1.5s ease',
+                            MozTransition: 'all 1.5s ease',
+                            MsTransition: 'all 1.5s ease',
+                            OTransition: 'all 1.5s ease',
+                            transition: 'all 1.5s ease'
+                        });
+                        $(value).find('aside').css({
+                            WebkitTransition: 'all 1.5s ease',
+                            MozTransition: 'all 1.5s ease',
+                            MsTransition: 'all 1.5s ease',
+                            OTransition: 'all 1.5s ease',
+                            transition: 'all 1.5s ease'
+                        });
+                        $(value).find('section').css({
+                            WebkitTransition: 'all 1.5s ease',
+                            MozTransition: 'all 1.5s ease',
+                            MsTransition: 'all 1.5s ease',
+                            OTransition: 'all 1.5s ease',
+                            transition: 'all 1.5s ease'
+                        });
+                        $(value).find('footer').css({
+                            WebkitTransition: 'all 1.5s ease',
+                            MozTransition: 'all 1.5s ease',
+                            MsTransition: 'all 1.5s ease',
+                            OTransition: 'all 1.5s ease',
+                            transition: 'all 1.5s ease'
+                        });
+
+                    });
+                });
+            });
+        });
+    });
+
+
 });

@@ -670,5 +670,401 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
+        <member name="F:VeterinariaAlfaro.panelControl.Head1">
+            <summary>
+            Control Head1.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.favicon1">
+            <summary>
+            Control favicon1.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.favicon2">
+            <summary>
+            Control favicon2.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.formIni">
+            <summary>
+            Control formIni.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.LNombre">
+            <summary>
+            Control LNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.lkNombre">
+            <summary>
+            Control lkNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.LLongin">
+            <summary>
+            Control LLongin.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.lnkLogin">
+            <summary>
+            Control lnkLogin.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.LPanel">
+            <summary>
+            Control LPanel.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.panel">
+            <summary>
+            Control panel.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.LbtnCerrar">
+            <summary>
+            Control LbtnCerrar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.btnCerrar">
+            <summary>
+            Control btnCerrar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.contenido">
+            <summary>
+            Control contenido.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.musuario">
+            <summary>
+            Control musuario.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.mmascota">
+            <summary>
+            Control mmascota.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.panelControl.mreserva">
+            <summary>
+            Control mreserva.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.Head1">
+            <summary>
+            Control Head1.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.favicon1">
+            <summary>
+            Control favicon1.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.favicon2">
+            <summary>
+            Control favicon2.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.toggleCSS">
+            <summary>
+            Control toggleCSS.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.formIni">
+            <summary>
+            Control formIni.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.LNombre">
+            <summary>
+            Control LNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.lkNombre">
+            <summary>
+            Control lkNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.LLongin">
+            <summary>
+            Control LLongin.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.lnkLogin">
+            <summary>
+            Control lnkLogin.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.LPanel">
+            <summary>
+            Control LPanel.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.panel">
+            <summary>
+            Control panel.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.LbtnCerrar">
+            <summary>
+            Control LbtnCerrar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.btnCerrar">
+            <summary>
+            Control btnCerrar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.contenido">
+            <summary>
+            Control contenido.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.msg">
+            <summary>
+            Control msg.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.ddlUsuarios">
+            <summary>
+            Control ddlUsuarios.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtNombre">
+            <summary>
+            Control txtNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtApellido">
+            <summary>
+            Control txtApellido.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtUsuario">
+            <summary>
+            Control txtUsuario.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtPassword">
+            <summary>
+            Control txtPassword.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtTelefono">
+            <summary>
+            Control txtTelefono.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtTarjeta">
+            <summary>
+            Control txtTarjeta.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.txtCodigo">
+            <summary>
+            Control txtCodigo.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.rblTipo">
+            <summary>
+            Control rblTipo.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.btnHabilitar">
+            <summary>
+            Control btnHabilitar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.btnAgregar">
+            <summary>
+            Control btnAgregar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.btnEditar">
+            <summary>
+            Control btnEditar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Usuarios.btnEliminar">
+            <summary>
+            Control btnEliminar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
     </members>
 </doc>

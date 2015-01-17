@@ -115,8 +115,10 @@ namespace VeterinariaAlfaro.Controller
             return true;    
         }
         
-        public DataTable listaUsuarios(string patron = "")
+        public DataTable listaUsuarios(string patron = "", bool ddl = false)
         {
+            if (ddl)
+                return this.conection.getQuery("SELECT id, nombre + ' ' + apellido as nombres FROM tusuario");
             return this.conection.getQuery("SELECT id, nombre, apellido, telefono, email, tarjeta, codigo_seguridad, contrasena, tipo FROM tusuario WHERE id like '%" + patron + "%' OR apellido like '%" + patron + "%'");
         }
         

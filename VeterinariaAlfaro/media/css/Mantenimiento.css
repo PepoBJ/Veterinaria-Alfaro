@@ -1,0 +1,78 @@
+﻿#contenido 
+{
+    margin-top: 11em;
+}
+
+.mantenimiento li 
+{
+    list-style:none;
+    line-height: 2.5em;    
+    transition: all .7s;
+}
+
+.mantenimiento li a
+{
+    display:block;
+    color: #111;
+    transition: all .7s;
+    border-radius:4px;
+    background-image: url('/media/img/config.png');
+    background-position: 20,60;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    opacity:.5;
+}
+.mantenimiento li a:hover 
+{
+    background-color: rgba(0,0,0,.1);    
+    opacity:1;
+}
+
+.mantenimiento li #musuario:hover 
+{
+    background-image: url('/media/img/config.png'), url('/media/img/user.png');
+}
+
+.mantenimiento li #mmascota:hover 
+{
+    background-image: url('/media/img/config.png'), url('/media/img/perro.png');
+}
+
+.mantenimiento li #mreserva:hover 
+{
+    background-image: url('/media/img/config.png'), url('/media/img/reserva.png');
+}
+
+
+/**     MANTENIMIENTO USUARIOS      **/
+
+.campos ,.acciones
+{
+    margin: 1.5em 0;
+}
+#rbltipo
+{
+    display:block;
+    width: 99%;
+    color: #222;
+    text-align:center;
+    padding: 5px;
+}
+#rbltipo tr
+{
+    display:inline-block;
+    width: 50%;
+    box-sizing: border-box;
+}
+#rbltipo tr td 
+{
+    display: block;
+    min-width: 200px
+}
+#rbltipo label 
+{
+    display:inline-block;
+    width:auto;
+    color: #222;
+}
+/**     FIN MANTENIMIENTO USUARIOS      **/
