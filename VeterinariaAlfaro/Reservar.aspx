@@ -33,11 +33,11 @@
                     cancel: "No"
                 }
                 });
-                alertify.confirm("¿Seguro que quieres cancelar tu reserva?<br/>", function (e) {
+                alertify.confirm(x.data('msg'), function (e) {
                     if (e) {
                         location.href = x.data('url');
                     } else {
-                        alertify.error("Tu reserva no fue cancelada");
+                        alertify.error(x.data('cancel'));
                     }
                 });
                 return false;

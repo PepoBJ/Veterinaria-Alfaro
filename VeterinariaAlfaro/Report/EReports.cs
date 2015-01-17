@@ -366,7 +366,19 @@ namespace VeterinariaAlfaro.Report
                 lcancel.CssClass = "lcancel";
                 lcancel.Text = "Cancelar Reserva";
                 lcancel.NavigateUrl = "#"; //"javascript:;";
-                lcancel.Attributes.Add("data-url", "/AccionReservar.aspx?accion=cancel&url=" + reser.Id ) ;                
+                lcancel.Attributes.Add("data-url", "/AccionReservar.aspx?accion=cancel&url=" + reser.Id ) ;
+                lcancel.Attributes.Add("data-msg", "¿Seguro que quieres cancelar tu reserva?<br/>");
+                lcancel.Attributes.Add("data-cancel", "No se cancelo tu reserva.");  
+                
+
+                if (reser.Estado.ToLower() == "cancelado")
+                {
+                    lcancel.Text = "¿Volver a Reservar?";
+                    lcancel.NavigateUrl = "#"; //"javascript:;";
+                    lcancel.Attributes.Add("data-url", "/Reservar.aspx?reserva=" + reser.Mascota.Id ) ;
+                    lcancel.Attributes.Add("data-msg", "¿Seguro que quieres volver a pedir tu reserva?<br/>");
+                    lcancel.Attributes.Add("data-cancel", "No se reenvio tu reserva.");  
+                }
                 links.Controls.Add(lcancel);
                                
 
@@ -378,7 +390,7 @@ namespace VeterinariaAlfaro.Report
                 reserva.Controls.Add(punitario);
                 reserva.Controls.Add(ptotal);
                 reserva.Controls.Add(estado);
-                if (reser.Estado.ToLower() == "pendiente")
+                if (reser.Estado.ToLower() == "pendiente" || reser.Estado.ToLower() == "cancelado")
                     reserva.Controls.Add(links);
 
                 /*

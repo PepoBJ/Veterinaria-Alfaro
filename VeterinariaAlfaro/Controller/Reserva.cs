@@ -104,7 +104,7 @@ namespace VeterinariaAlfaro.Controller
         {
             string query = "SELECT tr.id FROM treserva tr INNER JOIN tmascota tm ON tr.id_mascota = tm.id " +
                 " JOIN tusuario tu ON tr.id_usuario = tu.id " +
-                " WHERE id_usuario = " + _id_user + " " + patron + " ORDER BY estado DESC";
+                " WHERE id_usuario = " + _id_user + " " + patron + " ORDER BY estado DESC, fecha_reserva DESC ";
             return this.conection.getQuery(query);
         } 
         

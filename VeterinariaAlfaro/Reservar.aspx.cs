@@ -38,7 +38,7 @@ namespace VeterinariaAlfaro
                 msg.InnerText = "Tu reserva fue realizada con exito";                
             else
                 msg.InnerText = "Tu reserva no pudo ser hecha, se envio el error.";
-            Response.AddHeader("REFRESH", "2;URL=Reservar.aspx");
+            Response.AddHeader("REFRESH", "1;URL=Reservar.aspx");
         }
 
         private void cargarContenido(string patron = "", bool busqueda = false)
