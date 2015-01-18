@@ -16,9 +16,13 @@ namespace VeterinariaAlfaro.Helpers
             Byte[] encodedBytes = md5.ComputeHash(ASCIIEncoding.Default.GetBytes(password));  
             return System.Text.RegularExpressions.Regex.Replace(BitConverter.ToString(encodedBytes).ToLower(), @"-", ""); 
         }
-        public static string convertDouble ( double parse )
+        public static string convertDouble(double parse)
         {
             return Convert.ToString(parse).Replace(',', '.');
+        }
+        public static string convertDoubleToDB(string parse)
+        {
+            return Convert.ToString(parse).Replace('.', ',');
         }
         public static bool soloNumeros(string cadena)
         {

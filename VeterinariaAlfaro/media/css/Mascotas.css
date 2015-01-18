@@ -1,0 +1,42 @@
+﻿select 
+{
+    display:block;
+    width: 90%;
+    margin: 1.5em auto;
+}
+
+.lista 
+{
+    padding: 0 0 1em 0;
+    border-bottom: 2px solid #eee;
+    transition: all .5s;
+    margin-bottom: 3em;
+}
+fieldset:hover .lista
+{
+    border-bottom: 2px solid #222;
+}
+.lista select 
+{
+    margin: 0 auto;
+}
+
+.campos input , .campos textarea
+{
+    display: block;
+    width: 90%;
+    margin: .7em auto;
+}
+.campos textarea
+{
+    height: auto; 
+    outline: none; 
+}
+.campos .group 
+{
+    margin-bottom: 2em;
+}
+.campos .group input 
+{
+    border-radius: 4px;
+}

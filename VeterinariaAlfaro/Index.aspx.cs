@@ -38,7 +38,7 @@ namespace VeterinariaAlfaro
             }
             else
                 cargarContent();
-
+            
         }
 
         private void cargarContent(string filtro = "",bool ty = true)

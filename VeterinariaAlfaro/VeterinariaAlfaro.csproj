@@ -60,12 +60,14 @@
     <Content Include="EditDatos.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Mantenimiento\Mascotas.aspx" />
     <Content Include="Mantenimiento\Reservas.aspx" />
     <Content Include="Mantenimiento\Usuarios.aspx" />
     <Content Include="media\css\Edit.css" />
     <Content Include="media\css\Index.css" />
     <Content Include="media\css\Login.css" />
     <Content Include="media\css\Mantenimiento.css" />
+    <Content Include="media\css\Mascotas.css" />
     <Content Include="media\css\MReservas.css" />
     <Content Include="media\css\Recerva.css" />
     <Content Include="media\css\style.css" />
@@ -132,6 +134,13 @@
     </Compile>
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimiento\Mascotas.aspx.cs">
+      <DependentUpon>Mascotas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Mascotas.aspx.designer.cs">
+      <DependentUpon>Mascotas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Mantenimiento\Reservas.aspx.cs">
       <DependentUpon>Reservas.aspx</DependentUpon>

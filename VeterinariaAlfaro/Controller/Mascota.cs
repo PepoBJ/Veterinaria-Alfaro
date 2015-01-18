@@ -53,11 +53,21 @@ namespace VeterinariaAlfaro.Controller
             }
         }
 
+        private int ult_id()
+        {
+            string sql = "select MAX(id) from tmascota";
+            DataTable dt = this.conection.getQuery(sql);
+            return Convert.ToInt16(dt.Rows[0].ItemArray[0].ToString());
+        }
+
         public bool newMascota()
         {
-            if (!conection.getNonQuery("INSERT INTO tmascota (raza,stock,precio,descripcion,pelo,color,cola,tamanyo_raza,type) VALUES (" +
-                "'" + this.Raza + "' , " + this.Stock + " , " + Helpers.HelpTool.convertDouble(this.Precio) + " , '" + this.Descripcion + "' , '" + this.Pelo + "' , '" + this.Color + "' , '" + this.Cola + "' , " + this.Tamanyo + " , '" + this.Type + "' )"))
-                return false;
+            if (conection.getNonQuery("INSERT INTO tmascota (raza,stock,precio,descripcion,pelo,color,cola,tamanyo_raza,type) VALUES (" +
+                "'" + this.Raza + "' , " + this.Stock + " , '" + Helpers.HelpTool.convertDouble(this.Precio) + "' , '" + this.Descripcion + "' , '" + this.Pelo + "' , '" + this.Color + "' , '" + this.Cola + "' , " + this.Tamanyo + " , '" + this.Type + "' )"))
+            {
+                this.Id = ult_id();
+                return true;
+            }
 
             return true;
         }
@@ -94,8 +104,10 @@ namespace VeterinariaAlfaro.Controller
             return true;
         }
 
-        public DataTable listaMascota(string patron = "", string order = "")
+        public DataTable listaMascota(string patron = "", string order = "", bool ddl = false)
         {
+            if(ddl)
+                return this.conection.getQuery("SELECT id, type + ' ' + raza as mascota FROM tmascota ORDER BY type" );
             return this.conection.getQuery("SELECT id, raza,stock,precio,descripcion, foto, pelo, color,cola,tamanyo_raza,type FROM tmascota WHERE id like '%" + patron + "%' OR raza like '%" + patron + "%' OR type like '%" + patron + "%' " + order);
         }       
         

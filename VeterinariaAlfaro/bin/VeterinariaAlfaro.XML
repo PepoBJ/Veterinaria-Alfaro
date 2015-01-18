@@ -274,6 +274,168 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.Head1">
+            <summary>
+            Control Head1.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.favicon1">
+            <summary>
+            Control favicon1.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.favicon2">
+            <summary>
+            Control favicon2.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.toggleCSS">
+            <summary>
+            Control toggleCSS.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.formIni">
+            <summary>
+            Control formIni.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LNombre">
+            <summary>
+            Control LNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.lkNombre">
+            <summary>
+            Control lkNombre.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LLongin">
+            <summary>
+            Control LLongin.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.lnkLogin">
+            <summary>
+            Control lnkLogin.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LPanel">
+            <summary>
+            Control LPanel.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.panel">
+            <summary>
+            Control panel.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LbtnCerrar">
+            <summary>
+            Control LbtnCerrar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.btnCerrar">
+            <summary>
+            Control btnCerrar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.contenido">
+            <summary>
+            Control contenido.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.msg">
+            <summary>
+            Control msg.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.txtBusqueda">
+            <summary>
+            Control txtBusqueda.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.btnBuscar">
+            <summary>
+            Control btnBuscar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.content_reservas">
+            <summary>
+            Control content_reservas.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
         <member name="F:VeterinariaAlfaro.EditDatos.Head1">
             <summary>
             Control Head1.
@@ -1066,7 +1228,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.Head1">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.Head1">
             <summary>
             Control Head1.
             </summary>
@@ -1075,7 +1237,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.favicon1">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.favicon1">
             <summary>
             Control favicon1.
             </summary>
@@ -1084,7 +1246,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.favicon2">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.favicon2">
             <summary>
             Control favicon2.
             </summary>
@@ -1093,7 +1255,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.toggleCSS">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.toggleCSS">
             <summary>
             Control toggleCSS.
             </summary>
@@ -1102,7 +1264,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.formIni">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.formIni">
             <summary>
             Control formIni.
             </summary>
@@ -1111,7 +1273,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LNombre">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.LNombre">
             <summary>
             Control LNombre.
             </summary>
@@ -1120,7 +1282,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.lkNombre">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.lkNombre">
             <summary>
             Control lkNombre.
             </summary>
@@ -1129,7 +1291,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LLongin">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.LLongin">
             <summary>
             Control LLongin.
             </summary>
@@ -1138,7 +1300,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.lnkLogin">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.lnkLogin">
             <summary>
             Control lnkLogin.
             </summary>
@@ -1147,7 +1309,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LPanel">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.LPanel">
             <summary>
             Control LPanel.
             </summary>
@@ -1156,7 +1318,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.panel">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.panel">
             <summary>
             Control panel.
             </summary>
@@ -1165,7 +1327,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.LbtnCerrar">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.LbtnCerrar">
             <summary>
             Control LbtnCerrar.
             </summary>
@@ -1174,7 +1336,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.btnCerrar">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.btnCerrar">
             <summary>
             Control btnCerrar.
             </summary>
@@ -1183,7 +1345,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.contenido">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.contenido">
             <summary>
             Control contenido.
             </summary>
@@ -1192,7 +1354,7 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.msg">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.msg">
             <summary>
             Control msg.
             </summary>
@@ -1201,27 +1363,135 @@
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.txtBusqueda">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.ddlMascotas">
             <summary>
-            Control txtBusqueda.
+            Control ddlMascotas.
             </summary>
             <remarks>
             Campo generado automáticamente.
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.btnBuscar">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.ddlTipo">
             <summary>
-            Control btnBuscar.
+            Control ddlTipo.
             </summary>
             <remarks>
             Campo generado automáticamente.
             Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
             </remarks>
         </member>
-        <member name="F:VeterinariaAlfaro.Mantenimiento.Reservas.content_reservas">
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.ddlTam">
             <summary>
-            Control content_reservas.
+            Control ddlTam.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.fuFoto">
+            <summary>
+            Control fuFoto.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtRaza">
+            <summary>
+            Control txtRaza.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtPelo">
+            <summary>
+            Control txtPelo.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtColor">
+            <summary>
+            Control txtColor.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtCola">
+            <summary>
+            Control txtCola.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtPrecio">
+            <summary>
+            Control txtPrecio.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtStock">
+            <summary>
+            Control txtStock.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.txtDescripcion">
+            <summary>
+            Control txtDescripcion.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.btnHabilitar">
+            <summary>
+            Control btnHabilitar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.btnAgregar">
+            <summary>
+            Control btnAgregar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.btnEditar">
+            <summary>
+            Control btnEditar.
+            </summary>
+            <remarks>
+            Campo generado automáticamente.
+            Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+            </remarks>
+        </member>
+        <member name="F:VeterinariaAlfaro.Mantenimiento.Mascotas.btnEliminar">
+            <summary>
+            Control btnEliminar.
             </summary>
             <remarks>
             Campo generado automáticamente.

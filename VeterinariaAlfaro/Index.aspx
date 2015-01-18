@@ -33,7 +33,7 @@
                 --><li class="perros"><a href="/Index.aspx?filter=perro">Perros</a></li><!--   
                 --><li class="gatos"><a href="/Index.aspx?filter=gato">Gatos</a></li><!-- 
                 --><li class="aves"><a href="/Index.aspx?filter=ave">Aves</a></li><!-- 
-                --><li class="otros"><a href="/Index.aspx?filter=peque">Pequeños</a></li><!--   
+                --><li class="otros"><a href="/Index.aspx?filter=otro">Otros</a></li><!--   
                 --><li runat="server" id="LLongin"><asp:HyperLink ID="lnkLogin" runat="server" NavigateUrl="~/Login.aspx">Login</asp:HyperLink></li><!--                
                 --><li runat="server" id="LPanel" class="ocultar"><asp:HyperLink ID="panel" runat="server" NavigateUrl="~/panelControl.aspx">[panel]</asp:HyperLink></li><!-- 
                 --><li runat="server" id="LbtnCerrar" class="ocultar"><asp:Button ID="btnCerrar" runat="server" Text="Salir" Visible="False" onclick="btnCerrar_Click"></asp:Button></li>

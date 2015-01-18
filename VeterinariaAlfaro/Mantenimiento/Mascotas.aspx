@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Usuarios.aspx.cs" Inherits="VeterinariaAlfaro.Mantenimiento.Usuarios" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Mascotas.aspx.cs" Inherits="VeterinariaAlfaro.Mantenimiento.Mascotas" %>
 
 
 <!DOCTYPE html />
@@ -11,6 +11,7 @@
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Mantenimiento.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/Mascotas.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="/media/notify/themes/alertify.core.css" />
 	<link rel="stylesheet" href="/media/notify/themes/alertify.default.css" id="toggleCSS" />
 
@@ -26,12 +27,18 @@
         function Confirmacion(str) {
 
             var seleccion = confirm("¿ " + str + " ?");
-            
+
             return seleccion;
+        }
+
+        function textAreaAdjust(o) {
+            o.style.height = "1px";
+            o.style.height = (25 + o.scrollHeight) + "px";
         }
 
         $(function () {
             $("#formIni").validateWebForm();
+            $('textarea').each(function (i, x) { textAreaAdjust(x) });
         });
          
     </script>
@@ -74,28 +81,38 @@
             
         <fieldset class="form" id="section">
             <header>
-                <h3>Mantenimiento Usuarios</h3>
+                <h3>Mantenimiento Mascotas</h3>
             </header>
 
             <aside class="lista">
-                <asp:DropDownList ID="ddlUsuarios" runat="server" AutoPostBack="True" 
-                    onselectedindexchanged="ddlUsuarios_SelectedIndexChanged" ></asp:DropDownList>
+                
+                <asp:DropDownList ID="ddlMascotas" runat="server" AutoPostBack="True" onselectedindexchanged="ddlMascotas_SelectedIndexChanged" 
+                       ></asp:DropDownList>
             </aside>
 
             <section class="campos">
-            <asp:TextBox ID="txtNombre" runat="server" CssClass="required" minLength="5" maxLength="8" placeholder="Nombre"></asp:TextBox>
-            <asp:TextBox ID="txtApellido" runat="server" CssClass="required" minLength="5" placeholder="Apellidos"></asp:TextBox>                    
-            <asp:TextBox ID="txtUsuario" runat="server" CssClass="required email" placeholder="E-mail"></asp:TextBox>
-            <asp:TextBox ID="txtPassword" runat="server" CssClass="required" minLength="8" 
-                placeholder="Contraseña" TextMode="Password"></asp:TextBox>                                        
-            <asp:TextBox ID="txtTelefono" runat="server" CssClass="required digits" placeholder="Telefono" minLength="9" maxLength="11"></asp:TextBox>
-            <asp:TextBox ID="txtTarjeta" runat="server" CssClass="required" minLength="16" maxLength="16" placeholder="# Tarjeta de Credito"></asp:TextBox>                    
-            <asp:TextBox ID="txtCodigo" runat="server" CssClass="required digits" minLength="3" maxLength="3" placeholder="Codigo de Seguridad"></asp:TextBox>                    
-            <asp:RadioButtonList ID="rblTipo" runat="server">
-                <asp:ListItem Selected="True" Value="normal">Usuario Normal</asp:ListItem>
-                <asp:ListItem Value="admin">Administrador</asp:ListItem>
-            </asp:RadioButtonList>
-            <input type="hidden" />
+                <asp:DropDownList ID="ddlTipo" runat="server">
+                    <asp:ListItem Selected="True" Value="perro">Perro</asp:ListItem>
+                    <asp:ListItem Value="gato">Gato</asp:ListItem>
+                    <asp:ListItem Value="ave">Ave</asp:ListItem>
+                    <asp:ListItem Value="otro">Otro</asp:ListItem>
+                </asp:DropDownList>
+                <asp:DropDownList ID="ddlTam" runat="server">
+                    <asp:ListItem Selected="True" Value="1">Pequeño</asp:ListItem>
+                    <asp:ListItem Value="2">Mediano</asp:ListItem>
+                    <asp:ListItem Value="3">Grande</asp:ListItem>
+                </asp:DropDownList>
+                <div class="group">
+                    <span>Foto</span>                   
+                    <asp:FileUpload ID="fuFoto" runat="server" />
+                </div>
+                <asp:TextBox ID="txtRaza" CssClass="required" minlength="4" runat="server" placeholder="Raza"></asp:TextBox>
+                <asp:TextBox ID="txtPelo" CssClass="required" minlength="4" runat="server" placeholder="Descripcin Pelo" TextMode="MultiLine"></asp:TextBox>
+                <asp:TextBox ID="txtColor" CssClass="required" minlength="4" runat="server" placeholder="Descripcin Color" TextMode="MultiLine"></asp:TextBox>
+                <asp:TextBox ID="txtCola" CssClass="required" minlength="4" runat="server" placeholder="Descripcin Cola" TextMode="MultiLine"></asp:TextBox>
+                <asp:TextBox ID="txtPrecio" CssClass="required number" runat="server" min="0" placeholder="Precio"></asp:TextBox>
+                <asp:TextBox ID="txtStock" runat="server" CssClass="required digits" min="0" placeholder="Stock"></asp:TextBox>
+                <asp:TextBox ID="txtDescripcion" runat="server" CssClass="required" minlength="20" placeholder="Descripcion" TextMode="MultiLine"></asp:TextBox>
             </section>
 
             <footer class="acciones">
@@ -103,14 +120,14 @@
                 onclick="btnHabilitar_Click" ></asp:Button>
 
             <asp:Button ID="btnAgregar" runat="server" Text="Insertar"  class="submit" 
-                onclick="btnAgregar_Click" OnClientClick="return Confirmacion('Seguro que quiere crear este Usuario');"></asp:Button>
+                onclick="btnAgregar_Click" OnClientClick="return Confirmacion('Seguro que quiere agregar esta Mascota');"></asp:Button>
 
             <asp:Button ID="btnEditar" runat="server" Text="Actualizar"  
-             OnClientClick="return Confirmacion('Esta seguro de editar la información de este Usuario');"
+             OnClientClick="return Confirmacion('Esta seguro de editar la información de la Mascota');"
             class="submit" onclick="btnEditar_Click" ></asp:Button>
 
             <asp:Button ID="btnEliminar" runat="server" Text="Eliminar"  
-             OnClientClick="return Confirmacion('Esta seguro de eliminar este Usuario');"
+             OnClientClick="return Confirmacion('Esta seguro de eliminar esta Mascota');"
             class="submit" onclick="btnEliminar_Click" ></asp:Button>
             </footer>
         </fieldset>
