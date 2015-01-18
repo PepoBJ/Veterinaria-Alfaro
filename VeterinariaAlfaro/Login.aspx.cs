@@ -22,6 +22,10 @@ namespace VeterinariaAlfaro
                 Session["userName"] = usr.Nombre;
                 Session["userID"] = usr.Id;
                 Session["type"] = usr.Tipo;
+
+                if (usr.Tipo.Equals("admin"))
+                    Response.Redirect("~/panelControl.aspx");
+
                 if (Request.QueryString["url"] != null)
                     redirect_old_page();
 
