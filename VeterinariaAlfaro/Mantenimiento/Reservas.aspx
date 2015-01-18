@@ -1,23 +1,28 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reservar.aspx.cs" Inherits="VeterinariaAlfaro.Reservar" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Reservas.aspx.cs" Inherits="VeterinariaAlfaro.Mantenimiento.Reservas" %>
+
 
 <!DOCTYPE html />
 <html lang="es">
 <head id="Head1" runat="server">
-    <title>Tus Reservas</title>
+    <title>Panel De Mantenimiento</title>
     <link id="favicon1" runat="server" rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link id="favicon2" runat="server" rel="icon" href="/favicon.ico" type="image/ico" />
 
-    <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/Validate.css" rel="stylesheet" type="text/css" />
+    <link href="/media/css/Mantenimiento.css" rel="stylesheet" type="text/css" />
     <link href="/media/css/Recerva.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="/media/notify/themes/alertify.core.css" />
-	<link rel="stylesheet" href="/media/notify/themes/alertify.default.css" id="toggleCSS" />
+    <link href="/media/css/MReservas.css" rel="stylesheet" type="text/css" />
     
+    <link rel="stylesheet" href="/media/notify/themes/alertify.core.css" />
+    <link rel="stylesheet" href="/media/notify/themes/alertify.default.css" id="toggleCSS" />
+
     <meta charset="utf-8" />
     <script type="text/javascript" src="/media/js/jquery.js"></script>
     <script type="text/javascript" src="/media/js/menu.js"></script>
     <script src="/media/notify/lib/alertify.min.js"></script>
     <script src="/media/js/Confirmation.js"></script>
+    
 </head>
 <body>
     <form id="formIni" runat="server">
@@ -45,25 +50,25 @@
         </nav>
     </header>   
     
-    <div id="content_aux">
-    
-    
-    <section id="contenido" runat="server">        
-                      
-            <div class="notificacion">
-                <p id="msg" runat="server">Notificaciones</p>
-            </div>       
-            
-            <div id="buscador">                
-                <asp:TextBox ID="txtBusqueda" runat="server"></asp:TextBox>
-                <asp:Button ID="btnBuscar" runat="server" Text="Buscar" 
-                    onclick="btnBuscar_Click"></asp:Button>
-            </div>
 
-            <div id="content_reservas" runat="server">
+    <div id="content_aux">
+        
+    <section id="contenido" runat="server">    
+        <div class="notificacion">
+            <p id="msg" runat="server">Notificaciones</p>
+        </div>
+
+        <div id="buscador">                
+            <asp:TextBox ID="txtBusqueda" runat="server"></asp:TextBox>
+            <asp:Button ID="btnBuscar" runat="server" Text="Buscar" onclick="btnBuscar_Click" 
+                ></asp:Button>
+        </div>
+
+        <div id="content_reservas" runat="server">
                 
-            </div>            
-            
+        </div> 
+
+        
     </section>
 
     </div>
@@ -73,4 +78,5 @@
     </footer>
 
     </form>
+</body>
 </html>

@@ -245,13 +245,13 @@ namespace VeterinariaAlfaro.Report
             return aux;
         }
 
-        public static Panel listaReservas(string patron = "")
+        public static Panel listaReservas(string patron = "", bool allUser = false)
         {
             Panel aux = new Panel();
 
             Controller.Usuario user = new Controller.Usuario(Convert.ToInt16(System.Web.HttpContext.Current.Session["userID"]));
 
-            DataTable _data = new Controller.Reserva().listaReservaUser(user.Id, patron);
+            DataTable _data = new Controller.Reserva().listaReservaUser(user.Id, patron, allUser);
 
             for (int i = 0; i < _data.Rows.Count; i++)
             {
@@ -268,7 +268,7 @@ namespace VeterinariaAlfaro.Report
                 name.Controls.Add(leyend);
                 Label text = new Label();
                 text.CssClass = "cont";
-                text.Text = user.Nombre + " " + user.Apellido.Split(' ')[0];
+                text.Text = reser.Usuario.Nombre + " " + reser.Usuario.Apellido.Split(' ')[0];
                 name.Controls.Add(text);
 
                 HtmlGenericControl freserva = new HtmlGenericControl("div");
@@ -353,34 +353,72 @@ namespace VeterinariaAlfaro.Report
 
 
                 HtmlGenericControl links = new HtmlGenericControl("div");
-                links.Attributes.Add("class", "links");
-                /*
-                HyperLink ledit = new HyperLink();
-                ledit.CssClass = "ledit";
-                ledit.Text = "Editar";
-                ledit.ID = "btnEditar";
-                ledit.NavigateUrl = "~/AccionReservar.aspx?accion=edit&url=" + reser.Id;
-                */
+                links.Attributes.Add("class", "links");                
 
-                HyperLink lcancel = new HyperLink();
-                lcancel.CssClass = "lcancel";
-                lcancel.Text = "Cancelar Reserva";
-                lcancel.NavigateUrl = "#"; //"javascript:;";
-                lcancel.Attributes.Add("data-url", "/AccionReservar.aspx?accion=cancel&url=" + reser.Id ) ;
-                lcancel.Attributes.Add("data-msg", "¿Seguro que quieres cancelar tu reserva?<br/>");
-                lcancel.Attributes.Add("data-cancel", "No se cancelo tu reserva.");  
-                
-
-                if (reser.Estado.ToLower() == "cancelado")
+                if (!allUser)
                 {
-                    lcancel.Text = "¿Volver a Reservar?";
+                    HyperLink lcancel = new HyperLink();
+                    lcancel.CssClass = "lbtndefault";
+                    lcancel.Text = "Cancelar Reserva";
                     lcancel.NavigateUrl = "#"; //"javascript:;";
-                    lcancel.Attributes.Add("data-url", "/Reservar.aspx?reserva=" + reser.Mascota.Id ) ;
-                    lcancel.Attributes.Add("data-msg", "¿Seguro que quieres volver a pedir tu reserva?<br/>");
-                    lcancel.Attributes.Add("data-cancel", "No se reenvio tu reserva.");  
+                    lcancel.Attributes.Add("data-url", "/AccionReservar.aspx?uri=Reservar.aspx&accion=cancel&url=" + reser.Id);
+                    lcancel.Attributes.Add("data-msg", "¿Seguro que quieres cancelar tu reserva?<br/>");
+                    lcancel.Attributes.Add("data-cancel", "No se cancelo tu reserva.");
+
+
+                    if (reser.Estado.ToLower() == "cancelado")
+                    {
+                        lcancel.Text = "¿Volver a Reservar?";
+                        lcancel.NavigateUrl = "#"; //"javascript:;";
+                        lcancel.Attributes.Add("data-url", "/Reservar.aspx?reserva=" + reser.Mascota.Id);
+                        lcancel.Attributes.Add("data-msg", "¿Seguro que quieres volver a pedir tu reserva?<br/>");
+                        lcancel.Attributes.Add("data-cancel", "No se reenvio tu reserva.");
+                    }
+                    links.Controls.Add(lcancel);
                 }
-                links.Controls.Add(lcancel);
-                               
+                else
+                {
+                    HyperLink lcancel = new HyperLink();
+                    lcancel.CssClass = "lbtndefault";
+                    lcancel.Text = "Cancelar";
+                    lcancel.NavigateUrl = "#"; //"javascript:;";
+                    lcancel.Attributes.Add("data-url", "/AccionReservar.aspx?uri=/Mantenimiento/Reservas.aspx&accion=cancel&url=" + reser.Id);
+                    lcancel.Attributes.Add("data-msg", "¿Seguro que quieres cancelar esta reserva?<br/>");
+                    lcancel.Attributes.Add("data-cancel", "No se cancelo la reserva.");
+
+                    HyperLink lpendiente = new HyperLink();
+                    lpendiente.CssClass = "lbtndefault";
+                    lpendiente.Text = "Pendiente";
+                    lpendiente.NavigateUrl = "#"; //"javascript:;";
+                    lpendiente.Attributes.Add("data-url", "/AccionReservar.aspx?uri=/Mantenimiento/Reservas.aspx&accion=pendiente&url=" + reser.Id);
+                    lpendiente.Attributes.Add("data-msg", "¿Seguro que quieres poner en pendiente esta reserva?<br/>");
+                    lpendiente.Attributes.Add("data-cancel", "No se puso en pendiente la reserva.");
+
+                    HyperLink lentregado = new HyperLink();
+                    lentregado.CssClass = "lbtndefault";
+                    lentregado.Text = "Entregar";
+                    lentregado.NavigateUrl = "#"; //"javascript:;";
+                    lentregado.Attributes.Add("data-url", "/AccionReservar.aspx?uri=/Mantenimiento/Reservas.aspx&accion=entregar&url=" + reser.Id);
+                    lentregado.Attributes.Add("data-msg", "¿Seguro que quieres entregar esta reserva?<br/>");
+                    lentregado.Attributes.Add("data-cancel", "No se entrego la reserva.");
+
+
+                    if(reser.Estado.Equals("entregado"))
+                    {
+                        links.Controls.Add(lcancel);
+                        links.Controls.Add(lpendiente);
+                    }
+                    else if(reser.Estado.Equals("pendiente"))
+                    {
+                        links.Controls.Add(lcancel);
+                        links.Controls.Add(lentregado);
+                    }
+                    else
+                    {
+                        links.Controls.Add(lpendiente);
+                        links.Controls.Add(lentregado);
+                    }                    
+                }                               
 
                 reserva.Controls.Add(name);
                 reserva.Controls.Add(freserva);
@@ -390,26 +428,12 @@ namespace VeterinariaAlfaro.Report
                 reserva.Controls.Add(punitario);
                 reserva.Controls.Add(ptotal);
                 reserva.Controls.Add(estado);
-                if (reser.Estado.ToLower() == "pendiente" || reser.Estado.ToLower() == "cancelado")
+
+                if(allUser)
+                    reserva.Controls.Add(links);
+                else if (reser.Estado.ToLower() == "pendiente" || reser.Estado.ToLower() == "cancelado")
                     reserva.Controls.Add(links);
 
-                /*
-                HtmlGenericControl freserva = new HtmlGenericControl("div");
-                freserva.Attributes.Add("class", "freserva");
-                HtmlGenericControl fecha = new HtmlGenericControl("input");
-                fecha.Attributes.Add("class", "fecha");
-                fecha.Attributes.Add("type", "date");
-                fecha.Attributes.Add("value", reser.Fecha_reserva);
-                freserva.Controls.Add(fecha);
-
-                HtmlGenericControl fentrega = new HtmlGenericControl("div");
-                fentrega.Attributes.Add("class", "fentrega");
-                fecha = new HtmlGenericControl("input");
-                fecha.Attributes.Add("class", "fecha");
-                fecha.Attributes.Add("type", "date");
-                fecha.Attributes.Add("value", reser.Fecha_entrega);
-                fentrega.Controls.Add(fecha);
-                */
 
                 aux.Controls.Add(reserva);
 

@@ -100,11 +100,19 @@ namespace VeterinariaAlfaro.Controller
             return this.conection.getQuery("SELECT id, fecha_reserva, fecha_entrega, id_usuario, id_mascota, cantidad, estado, total FROM treserva WHERE id like '%" + patron + "%' OR estado like '%" + patron + "%' OR fecha_reserva like '%" + patron + "%' OR fecha_entrega like '%" + patron + "%' " + order);
         }
 
-        public DataTable listaReservaUser(int _id_user, string patron = "")
+        public DataTable listaReservaUser(int _id_user, string patron = "", bool allUser = false)
         {
-            string query = "SELECT tr.id FROM treserva tr INNER JOIN tmascota tm ON tr.id_mascota = tm.id " +
+            string query = "SELECT tr.id FROM treserva tr JOIN tmascota tm ON tr.id_mascota = tm.id " +
                 " JOIN tusuario tu ON tr.id_usuario = tu.id " +
                 " WHERE id_usuario = " + _id_user + " " + patron + " ORDER BY estado DESC, fecha_reserva DESC ";
+            if (allUser)
+            {
+                patron =  patron == "" ? "" : " WHERE " + patron;
+                query = "SELECT tr.id FROM treserva tr JOIN tmascota tm ON tr.id_mascota = tm.id " +
+                " JOIN tusuario tu ON tr.id_usuario = tu.id " +
+                patron + " ORDER BY estado DESC, fecha_reserva ASC ";
+            }
+
             return this.conection.getQuery(query);
         } 
         

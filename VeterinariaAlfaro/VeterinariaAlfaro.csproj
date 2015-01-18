@@ -60,16 +60,19 @@
     <Content Include="EditDatos.aspx" />
     <Content Include="Index.aspx" />
     <Content Include="Login.aspx" />
+    <Content Include="Mantenimiento\Reservas.aspx" />
     <Content Include="Mantenimiento\Usuarios.aspx" />
     <Content Include="media\css\Edit.css" />
     <Content Include="media\css\Index.css" />
     <Content Include="media\css\Login.css" />
     <Content Include="media\css\Mantenimiento.css" />
+    <Content Include="media\css\MReservas.css" />
     <Content Include="media\css\Recerva.css" />
     <Content Include="media\css\style.css" />
     <Content Include="media\css\Validate.css" />
     <Content Include="media\img\logo.png" />
     <Content Include="media\img\banner.jpg" />
+    <Content Include="media\js\Confirmation.js" />
     <Content Include="media\js\jquery.js" />
     <Content Include="media\js\jquery.validate.min.js" />
     <Content Include="media\js\jquery.validation.net.webforms.min.js" />
@@ -130,6 +133,13 @@
     <Compile Include="Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Mantenimiento\Reservas.aspx.cs">
+      <DependentUpon>Reservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mantenimiento\Reservas.aspx.designer.cs">
+      <DependentUpon>Reservas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Mantenimiento\Usuarios.aspx.cs">
       <DependentUpon>Usuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -156,6 +166,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="media\img-mascota\" />
+    <Folder Include="media\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

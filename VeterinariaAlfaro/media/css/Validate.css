@@ -91,7 +91,7 @@ fieldset input:last-child,
 #btnEliminar , 
 #btnBuscar,
 #btnHabilitar,
-.linkPanel, .lcancel{
+.linkPanel, .lbtndefault{
 	display: block;
 	width: auto;
 	padding: 5px;
@@ -142,12 +142,12 @@ fieldset input:last-child:hover,
 #btnAgregar:hover,
 #btnEliminar:hover , 
 #btnBuscar:hover,
-.linkPanel:hover, .lcancel:hover
+.linkPanel:hover, .lbtndefault:hover
 {
     border: 2px solid #000;
 }
 
-#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar, #btnBuscar, .lcancel { 
+#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar, #btnBuscar, .lbtndefault { 
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: 0;
@@ -225,7 +225,7 @@ select {
 	.notificacion {
 		width: 50% !important;
 	}
-	#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar, #btnBuscar, .lcancel { 
+	#btnEditar, #btnEliminar, #btnAgregar, #btnHabilitar, #btnBuscar, .lbtndefault { 
 		margin-top: 10px !important;
 	}
 	.linkPanel {

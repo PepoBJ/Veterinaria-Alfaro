@@ -11,13 +11,14 @@ namespace VeterinariaAlfaro
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            sesion_init(); 
             if (Request.QueryString["reserva"] != null)
                 response_view();
             else
                 if(!Page.IsPostBack)
                     cargarContenido();
 
-            sesion_init();        
+                   
         }
 
         private void response_view()

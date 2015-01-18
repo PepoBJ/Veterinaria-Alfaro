@@ -11,9 +11,10 @@ namespace VeterinariaAlfaro.Mantenimiento
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!Page.IsPostBack) 
-                cargarListaUsuarios();
             sesion_init();
+
+            if (!Page.IsPostBack) 
+                cargarListaUsuarios();            
         }
 
         private void sesion_init()

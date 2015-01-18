@@ -11,9 +11,10 @@ namespace VeterinariaAlfaro
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            sesion_init();
             if (!Page.IsPostBack)
                 cargarDatos();
-            sesion_init();
+            
         }
 
         private void sesion_init()
