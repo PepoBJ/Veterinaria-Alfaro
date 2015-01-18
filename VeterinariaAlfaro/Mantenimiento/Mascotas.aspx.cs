@@ -139,6 +139,7 @@ namespace VeterinariaAlfaro.Mantenimiento
                 if (masc.editMascota())
                 {
                     msg.InnerText = "Datos Modificados correctamente";
+                    limpiarCampos();
                     cargarListaMascotas();
                     ddlMascotas.SelectedValue = masc.Id.ToString();
                 }
